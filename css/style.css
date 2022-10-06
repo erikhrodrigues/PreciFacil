@@ -1,0 +1,149 @@
+:root {
+    --titulo: #ffffff;
+    --subtitulo: #ffffff;
+    --descricao: #ffffff;
+    --roxo: #540d6e;
+    --salmao: #EE4266;
+    --amarelo: #FFD23F;
+}
+
+body {
+    background: var(--roxo);
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    margin: 1rem 0 0 0;
+    width: 120px;
+}
+
+.container {
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__text {
+    width: 60vw;
+    margin-right: 1rem 1rem
+    
+}
+
+
+.container__titulo {
+    text-align: center;
+    color: var(--amarelo);
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.container__subtitulo {
+    margin-bottom: 0.3rem;
+    text-align: center;
+    color: var(--titulo);
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.input {
+    padding: 0.3rem 0;
+    width: 40vw;
+    align-self: center;
+    border-radius: 20px;
+    text-align: center;
+}
+
+select {
+    padding: 0.1rem;
+    width: 40vw;
+    align-self: center;
+    margin: 0.5rem 0;
+}
+
+#select-lucro {
+    border-radius: 10px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--roxo);
+}
+
+.calcular, .resultado__botaonovocalculo {
+    border-radius: 20px;
+    padding: 1rem;
+    width: 40vw;
+    height:3rem;
+    background-color: var(--salmao);
+    font-weight: 700;
+    border: none;
+    color: var(--titulo);
+}
+
+.resultado__botaonovocalculo {
+    margin: 1rem;
+    display: bock;
+}
+
+.imagem__personagem__resultado{
+    width: 50vw;
+    margin: 1rem 0;
+    display: block;
+}
+#res {
+    margin: -4.5rem 0;
+    display: none;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.resultado__valor {
+    color: green;
+    font-size: 30px;
+    font-weight: 700;
+    border: 1px solid var(--titulo);
+    padding: 0.5rem 1rem;
+}
+
+
+.container__lucro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container__calcular  {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.subtitulo__calcular {
+    margin: 1rem 0;
+    width: 40vw;
+    color: var(--subtitulo);
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.container__calcular__areabotao {
+
+}
+
+.imagem__personagem__home {
+    width: 40vw;
+}
