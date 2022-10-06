@@ -38,7 +38,7 @@ function calcular() {
     //let resCusto = Number(custo.value)
     //imprimindo resultado na tela
     //res.innerHTML = `Você deve vender esse produto/serviço à `
-
+    res.innerHTML += `<br>Você deve vender o produto/serviço à`
     var criarResultado = document.createElement("p")
     criarResultado.classList.add("resultado__valor")
     criarResultado.innerHTML = `${total.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})}`
@@ -65,6 +65,10 @@ function calcular() {
 
 function novoCalculo() {
     res.innerText =""
+    let criarImagem = document.createElement("img")
+    criarImagem.setAttribute("src", "img/PreciFacil-Personagem-Resultado.png")
+    criarImagem.classList.add("imagem__personagem__resultado")
+    res.appendChild(criarImagem)
     res.style.display="none"
     inputs.style.display = "block"
     custo.value=""
