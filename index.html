@@ -4,28 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precifacil</title>
+    <title>Precifacil - HOME</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-    
-    <h1 class="logo"><img src="img/logo.png" alt="Logo da precifacil"></h1>
+    <nav>
+        <h1><img src="img/PreciFacil-logo.svg" alt="Logo da PreciFacil"></h1>
+        <p class="slogan">O jeito mais fácil de precificar seu produto/serviço para vender na Internet!</p>
+    </nav>
     <main>
         <div class="inputs">
             <div class="container">
                 <div class="container__text">
                     <p class="container__titulo">CUSTO</p>
-                    <p class="container__subtitulo">Qual o custo do produto que deseja vender?</p>
+                    <p class="container__subtitulo">Quantos custa para você o produto/serviço que deseja vender?</p>
                 </div>
-                <!--<p class="container__descricao">Considere nesse campo os custos finais que você têm relacionado ao produto que deseja calcular, por exemplo: valor do produto + transporte + embalagem, etc..</p> -->
                 <input type="number" class="input" id="custo" placeholder="R$">
             </div>
             <div class="container">
                 <div class="container__text">
                     <p class="container__titulo">LUCRO</p>
-                    <p class="container__subtitulo">Quantos % ou R$ e como deseja ter o resultado do lucro líquido com a venda desse produto/serviço?</p>
+                    <p class="container__subtitulo">Quantos % ou R$ você deseja de lucro líquido vendendo esse produto/serviço?</p>
                 </div>
                 <div class="container__lucro">
                     <select name="lucro" id="select-lucro" placeholder="%">
@@ -38,23 +39,21 @@
             <div class="container">
                 <div class="container__text">
                     <p class="container__titulo">TAXA POR VENDA</p>
-                    <p class="container__subtitulo">Qual as taxas você vai pagar por venda?</p>
+                    <p class="container__subtitulo">Quantos % de comissão/venda a plataforma vai te cobrar?</p>
                  </div>
-                <!--<p class="container__descricao">Considere nesse campo os custos com maquininha de cartão, boleto, etc...</p>-->
                 <input type="number" class="input" id="taxa" placeholder="%">
+            </div> 
+        </div>
+        <div class="container__calcular">
+            <div>
+                <input type="button" class="calcular" value="CALCULAR" onclick="calcular()">
+                <p class="subtitulo__calcular">Clique em "Calcular" e saiba exatamente por quantos você deve vender o seu produto/serviço!</p>
             </div>
-            <div class="container__calcular">
-                <div>
-                    <input type="button" class="calcular" value="CALCULAR" onclick="calcular()">
-                    <p class="subtitulo__calcular">Clique em "Calcular" e saiba exatamente por quantos você deve vender o seu produto/serviço.</p>
-                </div>
-                 <img src="img/PreciFacil-Boneco-home.png" alt="" class="imagem__personagem__home">
-            </div>
-            
+             <img src="img/PreciFacil-Boneco-home.svg" alt="" class="imagem__personagem__home">
         </div>
         <div id="res">
             <div>
-                <img src="img/PreciFacil-Personagem-Resultado.png" alt="" class="imagem__personagem__resultado">
+                <img src="img/PreciFacil-Personagem-Resultado.svg" alt="" class="imagem__personagem__resultado">
             </div>
         </div>
 

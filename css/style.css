@@ -9,19 +9,29 @@
 
 body {
     background: var(--roxo);
+    font-family: sans-serif;
 }
 
 
-.logo {
+nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin: 1rem 1rem;
 }
 
-.logo img {
-    margin: 1rem 0 0 0;
+h1 img {
     width: 120px;
 }
+
+.slogan {
+    margin: 0.3rem 0 0;
+    text-align: center;
+    color: var(--amarelo);
+    font-size: 13;
+}
+
 
 .container {
     margin: 2rem 1rem;
@@ -34,15 +44,12 @@ body {
 .container__text {
     width: 60vw;
     margin-right: 1rem 1rem
-    
 }
-
 
 .container__titulo {
     text-align: center;
     color: var(--amarelo);
     font-size: 20px;
-    font-family: sans-serif;
 }
 
 .container__subtitulo {
@@ -50,7 +57,6 @@ body {
     text-align: center;
     color: var(--titulo);
     font-size: 12px;
-    font-family: sans-serif;
 }
 
 .input {
@@ -61,14 +67,11 @@ body {
     text-align: center;
 }
 
-select {
+#select-lucro {
     padding: 0.1rem;
     width: 40vw;
     align-self: center;
     margin: 0.5rem 0;
-}
-
-#select-lucro {
     border-radius: 10px;
     text-align: center;
     font-size: 12px;
@@ -87,24 +90,23 @@ select {
     color: var(--titulo);
 }
 
-.resultado__botaonovocalculo {
-    margin: 1rem;
-    display: bock;
+.imagem__personagem__home {
+    width: 38vw;
 }
 
+/* Estilização dos resultados*/
+
 .imagem__personagem__resultado{
-    width: 50vw;
-    margin: 1rem 0;
+    width: 45vw;
     display: block;
 }
+
 #res {
-    margin: -2.5rem 0;
+    margin: -4rem 0;
     display: none;
     color: white;
     text-align: center;
-    font-family: sans-serif;
     font-size: 18px;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -112,13 +114,12 @@ select {
 
 .resultado__valor {
     margin: 1rem;
-    color: green;
+    color: rgb(10, 208, 10);
     font-size: 30px;
     font-weight: 700;
     border: 1px solid var(--titulo);
     padding: 0.5rem 1rem;
 }
-
 
 .container__lucro {
     display: flex;
@@ -137,14 +138,72 @@ select {
     width: 40vw;
     color: var(--subtitulo);
     text-align: center;
-    font-family: sans-serif;
     font-size: 14px;
 }
 
-.container__calcular__areabotao {
-
+.resultado__botaonovocalculo {
+    margin: 1rem;
+    display: bock;
+    
 }
 
-.imagem__personagem__home {
-    width: 40vw;
+@media screen and (min-width:480px) {
+    nav h1 img {
+        width: 200px;
+        margin: 0.5rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .imagem__personagem__home {
+        width: 8rem;
+        margin-left: 2rem;
+        align-self: center;
+    }
+    .container__subtitulo {
+        margin: 0.7rem 0;
+    }
+}
+
+@media screen and (min-width:769px) {
+    main {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .input {
+        padding: 1rem 0;
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        width: 40vw;
+    }
+    .container {
+        width: auto;
+        margin: 1rem 0;
+        align-self: center;
+    }
+
+    .container__calcular {
+        margin: 1rem 0;
+        flex-direction: column;
+        width: auto;
+    }
+    .container__text{
+        width: auto;
+    }
+
+    nav h1 img {
+        width: 200px;
+        margin: 1rem;
+    }
+
+    .imagem__personagem__home {
+        width:17rem;
+    }
+
 }
